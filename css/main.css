@@ -1,0 +1,163 @@
+.btn{
+
+    text-decoration:none;
+
+    background-color:#BA68C8;
+
+    color:white;
+
+    padding:15px 22px;
+
+    box-shadow:1px 1px 10px rgba(0,0,0,0.15);
+
+    transition:all 0.3s;
+
+}
+
+.btn:hover{
+
+    box-shadow:1px 1px 10px rgba(0,0,0,0.3);
+
+}
+
+/* Main */
+
+font-family:Arial,Helvetica,sans-serif;font-size:100%; 
+
+body{font-family:Lucida Grande,Lucida Sans Unicode,Lucida,Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;-webkit-font-smoothing:antialiased;background-repeat:no-repeat;background-position:center;background-attachment:fixed;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:0 1em}
+
+.bak,body{height:100%;background-size:cover}
+
+.bak{width:100%;position:fixed;left:0;top:0}
+
+main{position:relative}
+
+main .content{display:flex;margin:2em 1em;background:hsla(0,0%,100%,.8);text-align:center;border-radius:5px;animation:content .5s 2.2s both;box-shadow:0 0 20px rgba(0,0,0,.2);overflow:hidden;width:50em;height:30em}
+
+.left .avatar img{border-radius:100%;border:5px solid #fff}
+
+}
+
+      body{
+
+            background-color: #B8D5F4;
+
+        }
+
+        .c1{
+
+            width: 80px;
+
+            height: 80px;
+
+            border: 3px solid white;
+
+            border-radius: 50%;
+
+            overflow: hidden;
+
+        }
+
+    img{
+
+        width: 100%;
+
+    }
+
+/* 1 - 载入动画
+
+-------------------------------- */
+
+#loader{
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    z-index: 6;
+
+    position: fixed;
+
+    display: flex;
+
+    background: #fff;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    transition: opacity .2s, visibility .2s;
+
+}
+
+#loader.hidden{
+
+    opacity: 0;
+
+    visibility: hidden;
+
+}
+
+#loader img{
+
+    max-width: 8em;
+
+    border-radius: 80%;
+
+    border: 3px #fff solid;
+
+    box-shadow: 0 0 0 3px #045FB4;
+
+}
+
+#loader:before, #loader:after{
+
+    content: '';
+
+    width: 20em;
+
+    height: 3px;
+
+    margin: 1em;
+
+    display: block;
+
+    background: #045FB4;
+
+    animation: loader-line-left 1s both;
+
+}
+
+#loader:after{
+
+    animation: loader-line-right 1s both;
+
+}
+
+@keyframes loader-line-left {
+
+    0%{ transform: scaleX(0); transform-origin: left; }
+
+    50%{ transform: scaleX(1); transform-origin: left; }
+
+    100%{ transform: scaleX(0); transform-origin: right; }
+
+}
+
+@keyframes loader-line-right {
+
+    0%{ transform: scaleX(0);  transform-origin: right; }
+
+    50%{ transform: scaleX(1);  transform-origin: left; }
+
+    100%{ transform: scaleX(0);  transform-origin: left; }
+
+}
+
+h1 {text-shadow: 0.1em 0.1em #333}
